@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY METHODS</title>
+    <style>
+        table, tr, td, th{
+                border:1px solid grey;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Array types</th>
+                <th>Definition</th>
+                <th>syntax</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>pop()</td>
+                <td>
+                    <p>The pop() Method <b>remove lost elet at end</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let user=["ram","kumar","kabil","sam"];<br>
+                        console.log(user);<br>
+                        console.log(user.pop());<br>
+                        console.log(user);<br>
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>shift()</td>
+                <td>
+                    <p>The shift() Method <b>remove lost elet at start</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let users=["krish","veni","mathi","sum"];<br>
+                        console.log("Before shift", users);<br>
+                        let element=users.shift();<br>
+                        console.log("After shift", users);<br>
+                        console.log("Removed element :",element);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>push()</td>
+                <td>
+                    <p>The push() Method <b>Add lost elet at end</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let y=[1,2,3,4,5];<br>
+                        console.log(y);<br>
+                        y.push(50,60,70,80,90,100);<br>
+                        console.log(y);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>unshift()</td>
+                <td>
+                    <p>The unshift() Method <b>Add lost elet at start</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let friends=["krish","mathi","ananthi","mala","madhu","manju"];<br>
+                        console.log(friends);<br>
+                        let len=friends.unshift("karthi","malini");<br>
+                        console.log(len);<br>
+                        console.log(friends);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>join()</td>
+                <td>
+                    <p>The join() Method <b>Add lost elet at start</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const products=["Pen","Pencil","Eraser","Box"];<br>
+                        console.log(products);<br>
+                        console.log(products.join());<br>
+                        console.log(products.join("|"));
+
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>reverse()</td>
+                <td>
+                    <p>The reverse() Method <b>Add lost elet at start</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const n=[1,2,3,4,5];<br>
+                        console.log("Before reverse" ,n);<br>
+                        n.reverse();<br>
+                        console.log('After reverse', n)
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>map()</td>
+                <td>
+                    <p>map() <b>creates a new array from calling a function for every array element.</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let numbers=[1,2,3,4,5];<br>
+                        let sqrt=numbers.map((value)=>{<br>
+                            return Math.sqrt(value).toFixed(2);<br>
+                        });<br>
+                        console.table(sqrt);  
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>slice()</td>
+                <td>
+                    <p>The slice() method <b>returns a shallow copy of a portion of an array into a new array object selected from start to end.where start and end represent the index of items in that array.</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let val=[1,2,3,4,5,6,7,8,9,10];<br>
+                        console.log(val);<br>
+                        console.log(val.slice());<br>
+                        console.log(val.slice(5));<br>
+                        console.log(val.slice(4,7));
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>splice()</td>
+                <td>
+                    <p>Splice is to remove elements in array. It will change original array</p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let n1=[1,2,3,4,5,6,7,8,9,10];<br>
+                        console.log(n1);<br>
+                        let removed_elets=n1.splice(8);<br>
+                        console.log(removed_elets);<br>
+                        console.log(n1);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>concat()</td>
+                <td>
+                    <p>The concat() method is <b>used to merge two or more arrays.</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const x1=[10,20,30,40];<br>
+                        const x2=[50,60,70];<br>
+                        const x3=[80,90,100];<br>
+
+                        let x4=x1.concat(x2);<br>
+                        console.log(x4);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>sort()</td>
+                <td>
+                    <p>The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted.</p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const family=["dad","mom","sis","bro"];<br>
+                        console.log(family);<br>
+                        console.log(family.sort());
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>fill()</td>
+                <td>
+                    <p>The fill() method <b>fills specified elements in an array with a value.</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let w=[1,2,3,4,5,6];<br>
+                        console.log("Before fill " +w);<br>
+                        w.fill(3);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>foreach()</td>
+                <td>
+                    <p>The forEach() method is <b>an iterative method.</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let v=[1,2,3,4,5,6,7,8,9];<br>
+                        v.forEach((value)=>{<br>
+                            console.log(value);<br>
+                        });<br>
+                            <br>
+                        v.forEach((value,index)=>{<br>
+                            console.log("index: " +index , "value: " +value);<br>
+                        });
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>indexof()</td>
+                <td>
+                    <p>The indexof() method <b>returns the first index(position) of a specified value.</b></p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let fname="krishna's";<br>
+                        let lname="veni";<br>
+                        bio=fname.indexOf("s");<br>
+                        console.log("indexof s : " +bio);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>lastIndexof()</td>
+                <td>
+                    <p>The lastIndexOf() method returns the last index(posotion) of a specified value.</p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        let fname="krishna's";<br>
+                        let lname="veni";<br>
+                        bio=fname.lastIndexOf("s");<br>
+                        console.log("lastIndexof s : " +bio);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>filter()</td>
+                <td>
+                    <p>The filter() method creates a new array filled with elements that pass a test provided by a function.</p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const no=[1,2,3,4,5];<br>
+                        let evennum=no.filter(function(value);<br>
+                        {<br>
+                            return value%2==0;<br>
+                        });<br>
+                        let oddnum=no.filter(function(value);<br>
+                        {<br>
+                            return value%2==1;<br>
+                        });<br>
+                        console.log("evennum :" +evennum);<br>
+                        console.log("oddnum :" +oddnum);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>find()</td>
+                <td>
+                    <p>The find() method returns the value of the first element that passes a test.</p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const items=[<br>
+                            {no: 1, item:"chips", cost:45},<br>
+                            {no: 2, item:"cookie", cost:80},<br>
+                            {no: 3, item:"juice", cost:20},<br>
+                        ];<br>
+                            let affordable=items.find(function(value){<br>
+                            return value.cost<50;<br>
+                        });<br>
+                            console.log(affordable);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>findIndex()</td>
+                <td>
+                    <p>The findIndex() method returns the index of the first element in an array that satisfies the provided testing function.</p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const items=[<br>
+                            {no: 1, item:"chips", cost:45},<br>
+                            {no: 2, item:"cookie", cost:80},<br>
+                            {no: 3, item:"juice", cost:20},<br>
+                        ];<br>
+                        let affordable_findIndex=items.findIndex(function(value){<br>
+                            return value.cost>50;<br>
+                        });<br>
+                        console.log("findIndex : " +affordable_findIndex);
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>tostring()</td>
+                <td>
+                    <p>The toString() method returns a string representing the specified array and its elements.</p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        function display(){<br>
+                            var alpha="abcd";<br>
+                            console.log(alpha);<br>
+                        }<br>
+                        console.log(display.toString());
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>reduce()</td>
+                <td>
+                    <p>The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. </p>
+                </td>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        const fees=[240, 675,45,98,764];<br>
+                        let totalfees=fees.reduce(function(previousval,currentval){<br>
+                            return previousval+currentval;<br>
+                        });<br>
+                        console.log("totalfees : " +totalfees);
+                    </code>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
